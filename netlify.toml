@@ -1,0 +1,11 @@
+# 纯静态站点：无构建步骤，直接发布仓库内容
+# 目录里只有 index.html，Netlify 原样发布，不做任何构建。
+[build]
+  publish = "."
+  command = ""
+
+[context.production.environment]
+  NETLIFY_CONTEXT_LABEL = "production"
+
+[context.branch-deploy.environment]
+  NETLIFY_CONTEXT_LABEL = "client-preview"
