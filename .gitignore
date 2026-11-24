@@ -1,0 +1,15 @@
+# Netlify 本地关联状态，绝不能提交
+.netlify
+
+# 依赖与产物（B 类项目用）
+node_modules/
+dist/
+build/
+.next/
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
